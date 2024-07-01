@@ -9,3 +9,48 @@ body {
 .beluga {
     text-align: center;
 }
+.beluga:hover{
+    background-color: beige;
+}
+.container {
+    display: grid;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    grid-template-columns: 1fr 2fr 1fr;
+
+    grid-template-rows: 100px 100px 100px 100px;
+}
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 1;
+  grid-row-end: span 1;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+}
+.item2 {
+    grid-column-start: 1;
+  grid-column-end: -1;
+    grid-row-start: 2;
+    grid-row-end: span 1;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+  }
+  .item3 {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 3;
+    grid-row-end: span 1;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+  }
+  .item4 {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 4;
+    grid-row-end: span 1;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+  }
+
