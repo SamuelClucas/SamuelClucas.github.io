@@ -2,71 +2,54 @@ h1 {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
 }
-body {
-    margin-left: auto;
-    margin-right: auto;
-}
-.beluga {
-    text-align: center;
-}
-.beluga:hover{
-    background-color: beige;
-}
-header {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding-left: 10px;
-    padding-right: 10px;
-
-}
 .container {
     display: grid;
     padding-left: 10px;
     padding-right: 10px;
 
-    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 150px 150px 150px 150px;
 
-    grid-template-rows: 100px 100px 100px 100px;
+    justify-self: center;
+    align-self: center;
 }
 .item1 {
-  grid-column-start: 1;
-  grid-column-end: -1;
+  grid-column-start: 2;
   grid-row-start: 1;
-  grid-row-end: span 1;
+  grid-row-end: 2;
   font-family: 'Courier New', Courier, monospace;
   font-weight: bolder;
 }
+.item1:hover{
+    color: brown;
+}
 .item2 {
-    grid-column-start: 1;
-    grid-column-end: -1;
+    grid-column-start: 2;
     grid-row-start: 2;
-    grid-row-end: span 1;
+    grid-row-end: 3;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bolder;
   }
   .item3 {
-    grid-column-start: 1;
-    grid-column-end: -1;
+    grid-column-start: 2;
     grid-row-start: 3;
-    grid-row-end: span 1;
+    grid-row-end: 4;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bolder;
   }
-  .item4 {
-    grid-column-start: 1;
-    grid-column-end: -1;
+  .item4 { 
+    grid-column-start: 2;
     grid-row-start: 4;
-    grid-row-end: span 1;
+    grid-row-end: 5;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bolder;
   }
   .menu {
-    grid-column-start: 2;
-    grid-column-end: -1;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bolder;
     color: black;
     background-color: lightblue;
     justify-self: center;
-
+    align-self: center;
   }
 
