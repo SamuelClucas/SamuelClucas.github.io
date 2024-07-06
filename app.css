@@ -12,12 +12,18 @@ body {
 .beluga:hover{
     background-color: beige;
 }
+header {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
 .container {
     display: grid;
     padding-left: 10px;
     padding-right: 10px;
 
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
 
     grid-template-rows: 100px 100px 100px 100px;
 }
@@ -31,7 +37,7 @@ body {
 }
 .item2 {
     grid-column-start: 1;
-  grid-column-end: -1;
+    grid-column-end: -1;
     grid-row-start: 2;
     grid-row-end: span 1;
     font-family: 'Courier New', Courier, monospace;
@@ -52,5 +58,15 @@ body {
     grid-row-end: span 1;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bolder;
+  }
+  .menu {
+    grid-column-start: 2;
+    grid-column-end: -1;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    color: black;
+    background-color: lightblue;
+    justify-self: center;
+
   }
 
